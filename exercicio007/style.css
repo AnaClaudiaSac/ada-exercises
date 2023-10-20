@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+input,
+select,
+textarea {
+    font-family: 'Archivo', sans-serif;
+}
+
+body {
+    background: #fff;
+}
+
+:root {
+
+     /* Poderia colocar os tamanhos da fonte em rem em 62,5% e
+     Adicionar na cor para qual elemento ela vai ser*/
+
+    --color-base-white: hsl(0, 0%, 100%);
+    --color-base-100: hsl(240, 19%, 91%);
+    --color-base-gray-200: hsl(240, 25%, 92%);
+    --color-base-gray-300: hsl(240, 0%, 40%);
+    --color-base-gray-340: hsl(257, 3%, 43%);
+    --color-base-gray-350: hsl(260, 9%, 32%);
+    --color-base-gray-400: hsl(0, 0%, 24%);
+    --color-base-gray-500: hsl(255, 4%, 78%);
+    --color-base-gray-560: hsl(223, 4%, 66%);
+    --color-base-gray-600: hsl(240, 5%, 7%);
+    --color-base-gray-660: hsl(0, 1%, 58%);
+    --color-base-gray-700: hsl(262, 9%, 25%);
+}
+
+.page {
+    width: 800px;
+    margin: 0 auto;
+
+}
+
+h1 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 40px;
+    line-height: 42px;
+    margin-top: 60px;
+    color: var(--color-base-gray-600)
+}
+
+form {
+    margin-top: 40px;
+    border-radius: 8px 8px;
+    padding: 68px;
+    display: flex;
+    flex-direction: column;
+    background: var(--color-base-100);
+}
+
+fieldset {
+    border: none;
+    width: 100%;
+}
+
+.fieldset-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset legend {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 34px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid hsl(240, 25%, 92%);
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-wrapper label,
+.ckeckbox-wrapper label {
+    font-size: 16px;
+    line-height: 24px;
+    gap: 24px;
+    margin-top: 24px;
+    color: hsl(240, 1%, 26%);
+}
+
+.data-hora {
+   margin-top: 40px;
+}
+
+.date {
+    display: flex;
+    gap: 40px;
+}
+
+.date>:nth-child(1) {
+    width: 50%;
+}
+.date>:nth-child(2) {
+    width: 50%;
+}
+    
+.input-wrapper label span {
+    margin-left: 12px;
+    font-size: 12px;
+    line-height: 20px;
+    color: var(--color-base-gray-300);
+}
+
+.input-wrapper label span:hover {
+    color: var(--color-base-gray-500);
+}
+
+.input-wrapper input,
+.input-wrapper textarea,
+.input-wrapper select {
+    border-radius: 8px;
+    box-sizing: border-box;
+    height: 58px;
+    padding: 0 14px;
+    color: hsl(240, 1%, 58%);
+    border: 1px solid hsl(240, 25%, 92%);
+}
+
+p {
+    font-size: 14px;
+    margin-top: 40px;
+}
+
+#hobbie {
+    margin: 1px 12px;
+  }
+
+#event-hobbie,
+.select-hobbie {
+    height: 100px;
+}
+
+.input-wrapper textarea {
+    padding: 8px;
+    height: 168px;
+}
+
+.radio-option label{
+    
+   margin-top: 0 !important;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.checkbox-wrapper label {
+    margin: 10px;
+    align-items: center;
+    color: var(--color-base-gray-350);
+    gap: 8px;
+}
+.checkbox-wrapper {
+    margin-top: 80px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 40px;
+}
+
+footer .button {
+    margin-top: 20px;
+    height: 56px;
+    border: 0;
+    border-radius: 8px;
+    font-family: 'Archivo', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 26px;
+    color: var(--color-base-white);
+    background: var(--color-base-gray-560);
+}
+
+
+footer .button:hover {
+    background: var(--color-base-gray-660);
+}
+
+input:invalid {
+    border: 1px solid hsl(0, 100%, 50%);
+}

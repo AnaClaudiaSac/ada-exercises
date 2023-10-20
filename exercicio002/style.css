@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: Arial;
+}
+
+table {
+    border-collapse: collapse;
+    min-width: 40%;
+    margin: 30px;
+    text-align: center;
+}
+
+th,
+td {
+    padding: 6px;
+    width: 10px;
+    border: 1px solid black;
+    color: #555;
+}
+
+th {
+    background-color: #ccc
+}

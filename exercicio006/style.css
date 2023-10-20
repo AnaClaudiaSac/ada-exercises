@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0 10px;
+}
+
+
+table {
+    border-collapse: collapse;
+    min-width: 100%;
+    background-color: #363636;
+
+}
+
+thead {
+    height: 80px;
+
+}
+
+table,
+th,
+td {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    padding: 60px;
+    border: 1px solid white;
+    border-radius: 6px;
+    color: #fff;
+}
+
+th,
+td {
+    padding: 6px;
+    width: 40px;
+    text-align: center;
+}
+
+th {
+
+    font-size: 28px;
+    background-color: #6e6c6c;
+}
+
+a {
+    font-size: 22px;
+    font-style: italic;
+    color: white;
+}
+
+a:hover {
+    font-size: 40px;
+    translate: 2s;
+}
+
+.namemovieserie {
+    width: 800px;
+}
+
+.atores {
+    width: 400px;
+    letter-spacing: 1px;
+}
+
+.nota {
+    width: 80px;
+}
+
+.imagem {
+    width: 400px;
+}
+
+.image {
+    width: 100px;
+}
+
+
+.atores-lista {
+    list-style: none;
+
+}
+
+.atores-lista li {
+    font-size: 16px !important;
+}
+
+.vinte-e-quatro-horas {
+    width: 100px;
+}
+
+.star-trek {
+    width: 100px;
+}
+
+img:hover {
+    zoom: 1.5;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+ul li {
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-weight: 600;
+}
+
+li {
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 2px;
+}

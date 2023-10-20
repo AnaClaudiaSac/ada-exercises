@@ -1,0 +1,18 @@
+body {
+    width: 100%;
+    background: #ccc;
+}
+
+h1 {
+    color: #383636
+}
+
+h2 {
+    color: #464646;
+}
+
+
+ul li {
+    font-size: 16px;
+    color: #555;
+}

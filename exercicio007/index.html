@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,700;1,600&display=swap" rel="stylesheet">
+
+
+
+  <link rel="stylesheet" href="style.css">
+
+  <title>Formulário</title>
+
+</head>
+
+<body>
+  <div class="page">
+    <header>
+      <h1>Agendamento Dentista</h1>
+
+    </header>
+
+    <form id="form">
+
+      <fieldset>
+        <div class="fieldset-wrapper">
+          <legend>Faça seu agendamento</legend>
+
+          <div class="input-wrapper">
+            <label for="event-name">Nome:<span>(mínimo 16 caracteres)</span></label>
+            <input type="text" name="" id="event-name" required minlength="16" />
+          </div>
+
+
+          <div class="input-wrapper">
+            <label for="event-year">Idade:<span>(Precisa ser maoir que 18 anos)</span></label>
+            <input type="date" name="" id="event-year" min="1900 -01-01" max="2022-12-31" placeholder="Maior de 18 anos"
+              required />
+          </div>
+
+          <div class="input-wrapper">
+            <label for="event-telefone">Telefone para contato <span>(somente números)</span></label>
+            <input type="text" name="" id="event-telefone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+              placeholder="ex:(11)9999-9999" required />
+          </div>
+
+          <div class="input-wrapper">
+            <label for="event-email">E-mail</label>
+            <input type="email" name="" id="event-email" placeholder="Digite seu e-mail" required>
+
+
+            <div class="input-wrapper">
+              <label for="event-city">Selecione qual sua cidade</label>
+              <select name="" id="event-city">
+                <option value="Limeira">Limeira</option>
+                <option value="Piracicaba">Piracicaba</option>
+                <option value="Cosmópolis">Cosmópolis</option>
+                <option value="Araras">Araras</option>
+                <option value="Brotas">Brotas</option>
+                <option value="Americana">Americana</option>
+                <option value="Campinas">Campinas</option>
+                <option value="Jundiaí">Jundiaí</option>
+                <option value="São Paulo">São Paulo</option>
+              </select>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="event-genero">Genêro</label>
+              <div class="radio-option">
+                <input type="radio" name="gender" id="event-genero" value="masculino">
+                <label>Masculino</label>
+              </div>
+
+              <div class="radio-option">
+                <input type="radio" name="gender" id="event-genero" value="feminino">
+                <label>Feminino</label>
+              </div>
+
+            </div>
+
+            <div class="input-wrapper">
+              <label for="event-date-birth">Data de Nascimento</label>
+              <input type="date" name="" id="event-date-birth" min="1900-01-01" max="2022-12-31" required>
+
+            </div>
+
+            <fieldset>
+
+              <div class="fieldset-wrapper">
+                <legend class="data-hora">Data e hora</legend>
+
+                <div class="date">
+
+                  <div class="input-wrapper">
+                    <label for="event-date">Data</label>
+                    <input class="size-date" type="date" name="" id="event-date" />
+                  </div>
+
+                  <div class="input-wrapper">
+                    <label for="event-begin">Horário</label>
+                    <input type="time" name="" id="event-begin" />
+                  </div>
+                </div>
+
+              </div>
+
+            </fieldset>
+
+            <div class="input-wrapper">
+              <label for="event-info">Informe caso tenha dúvidas</label>
+              <textarea id="event-info"></textarea>
+            </div>
+
+            <div class="input-wrapper">
+
+
+              <p>Para escolher mais de uma opção aperte a tecla Ctrl e click com o mouse nas opções</p>
+
+              <label id="hobbie" for="event-hobbie">Selecione um Hobbie<span>( 7 minímo , pode selecionar
+                  mais de um)</span></label>
+
+              <select class="select-hobbie" id="event-hobbie" name="" multiple>
+
+                <option value="Treinar Academia" selected>Treinar Academia</option>
+                <option value="Andar de Bicicleta" selected>Andar de Bicicleta</option>
+                <option value="Caminhar" selected>Caminhar</option>
+                <option value="Correr" selected>Correr</option>
+                <option value="Natação" selected>Natação</option>
+                <option value="Esportes" selected>Esportes</option>
+                <option value="Ler" selected>Ler</option>
+                <option value="Fotografar" selected>Fotografar</option>
+                <option value="Videogames" selected>Videogames</option>
+                <option value="Jogar Bola" selected>Jogar Bola</option>
+                <option value="Cozinhar" selected>Cozinhar</option>
+                <option value="Artesanato" selected>Artesanato</option>
+                <option value="Música" selected>Música</option>
+                <option value="Desenhar" selected>Desenhar</option>
+                <option value="Pintar" selected>Pintar</option>
+                <option value="Seriados" selected>Seriados</option>
+                <option value="Filmes" selected>Filmes</option>
+              </select>
+
+            </div>
+
+          </div>
+
+      </fieldset>
+
+
+      <div class="checkbox-wrapper">
+        <input type="checkbox" id="event-terms" />
+        <label for="event-terms">Aceita os termos</label>
+      </div>
+
+      <footer>
+        <input class="button" type="submit" value="Enviar">
+        <input class="button" type="reset" value="Limpar">
+      </footer>
+
+    </form>
+
+  </div>
+
+
+
+
+
+</body>
+
+</html>
